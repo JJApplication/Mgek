@@ -1,0 +1,20 @@
+{% extends "base_index.html" %}
+{% block title %}Api{% endblock %}
+
+{% block body %}
+	<div class="container-wrap">
+		<div style="padding-top: 2em" id="fh5co-work">
+			<div class="row">
+				<div class="col-md-12 fh5co-project-detail">
+					<h2 style="margin-bottom: 30px" class="fh5co-project-title text-center animated fadeInUp">API</h2>
+                    <p class="animated fadeInUp" style="font-size: 16px;animation-delay: .3s">Mgek的站点api接口</p>
+                    <h2 class="animated fadeInUp" style="animation-delay: .3s">请访问<a href="http://api.mgek.cc">Mgek API</a>查看全部接口</h2>
+                    <p>首页数据库: <a href="/api_v1/{{ date }}/">api</a></p>
+                    <p>静态文件列表: <a href="/api_v3/">api</a></p>
+                    <p>ssr链接json: <a href="/api_v2/{{ date }}">api</a></p>
+                    <p>代理ip地址池: <a href="/api_v4/{{ date }}">api</a></p>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

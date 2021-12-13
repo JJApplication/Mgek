@@ -1,0 +1,35 @@
+# robots.txt of renj.io
+User-agent: YYSpider
+Disallow: /
+User-agent: ToutiaoSpider
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: JikeSpider
+Disallow: /
+User-agent: Baiduspider
+Disallow:
+User-agent: Sosospider
+Disallow:
+User-agent: sogou spider
+Disallow:
+User-agent: Googlebot
+Disallow:
+User-agent: Bingbot
+Disallow:
+User-agent: Slurp
+Disallow:
+User-agent: Teoma
+Disallow:
+User-agent: ia_archiver
+Disallow:
+User-agent: twiceler
+Disallow:
+User-agent: MSNBot
+Disallow:
+User-agent: googlebot-image
+Disallow:
+User-agent: *
+Disallow: /

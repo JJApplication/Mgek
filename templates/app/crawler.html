@@ -1,0 +1,45 @@
+{% extends "base_app.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">代理ip地址池</p>
+		  	</div>
+		<div id="fh5co-work">
+        <p>crawler是一个在线IP代理地址池爬虫，所有IP均收集整理自互联网</p>
+        <br>
+    <div class="code">
+    <h3>匿名代理</h3>
+    <pre class="json"><code>
+        {% for data in data1 %}
+(匿名代理) 地址:{{ data.ip }} 端口:{{ data.port }}
+        {% endfor %}
+    </code></pre>
+    <h3>透明代理</h3>
+    <pre class="json"><code>
+        {% for data in data2 %}
+(透明代理) 地址:{{ data.ip }} 端口:{{ data.port }}
+        {% endfor %}
+    </code></pre>
+    <h3>https代理</h3>
+    <pre class="json"><code>
+        {% for data in data3 %}
+(https代理) 地址:{{ data.ip }} 端口:{{ data.port }}
+        {% endfor %}
+    </code></pre>
+    <h3>http代理</h3>
+    <pre class="json"><code>
+        {% for data in data4 %}
+(http代理) 地址:{{ data.ip }} 端口:{{ data.port }}
+        {% endfor %}
+    </code></pre>
+        <br>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

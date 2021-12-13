@@ -1,0 +1,47 @@
+{% extends "base_app.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Font Cutter</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">simple solution of webfont compression</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+    <pre class="python"><code>
+    '''
+    font-cutter: a webfont tool for compressing your font
+    '''
+    from fontcutter import FTool
+
+    font = FTool('Cabin-Regular.ttf',demo.txt)
+    font.save('demo.woff')
+    </code></pre>
+        <br>
+        <p>Font Cutter是一款web格式字体裁剪压缩工具</p>
+        <h3>功能</h3>
+        <p>1.对ttf,otf字体进行文字提取，保留所需要的文字部分(使用txt文件记录需要裁剪的文字数据，自动去重)</p>
+        <p>2.对ttf,otf字体格式转换生成优化的woff和woff2字体格式</p>
+        <p>3.提供<b>中文</b>字体常用字模板，根据需求导入模板快速裁剪中文字体</p>
+        <p>4.进阶选项，受<a href="http://font-spider.org/">字蛛</a>启发提供网页全局爬虫，批量爬取网页内的文字，自动裁剪生成压缩字体</p>
+        <h3>使用规则</h3>
+        <p>1.字体的裁剪与生成会在本地产生缓存，使用中请勿删除缓存，缓存会在运行后自动清除</p>
+        <p>2.使用爬虫爬取文本的两种途径:</p>
+        <li style="margin-left: 20px">本地运行web服务后通过localhost直接爬取，需要传入站点下全部网址列表</li>
+        <li style="margin-left: 20px;margin-bottom: 10px">传入html本地文件路径列表</li>
+
+        <p>3.裁剪的字体需要符合非商业用途规范，本软件属于开源软件用于非商业用途，任何超出本软件使用范围的行为与本软件无关</p>
+        <h3>阅读文档</h3>
+        <a href="/font-cutter.md">Font-Cutter</a>
+            <h3>依赖</h3>
+            <p>Pyquery<br>Requests<br>Fonttools</p>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

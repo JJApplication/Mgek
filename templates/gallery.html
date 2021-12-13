@@ -1,0 +1,87 @@
+{% extends "base_index.html" %}
+{% block title %}Mgek Gallery{% endblock %}
+
+{% block head %}
+	<link rel="stylesheet" href="/css/bar.css">
+    <link href="/css/pictureViewer.css" rel="stylesheet">
+{% endblock %}
+
+{% block style %}
+    <style>
+        #fh5co-work{
+            padding-top: 2em;
+        }
+        #fh5co-work .col-md-6{
+            padding: 0;
+        }
+        #fh5co-work img{
+            margin-bottom: 15px;
+            max-width: 100%;
+        }
+        @media (max-width: 960px) {
+            .content{
+                width: 100% !important;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <h2 style="font-size: 25px" class="text-center">Gallery</h2>
+                <p class="text-center animated fadeInUp">生活即是诗情画意</p>
+		  	</div>
+		<div id="fh5co-work">
+        <small style="text-align: center;display: block">Full HD图片，加载缓慢，注意流量消耗</small>
+            <div class="row text-center image-list">
+                {% for img in list|list %}
+                    <div class="cover"><img src="{{ img }}"></div>
+                {% endfor %}
+            </div>
+
+        </div>
+	</div><!-- END container-wrap -->
+{% endblock %}
+
+{% block bar %}
+    <div class="bar">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAB2lBMVEUAAAAnKCRsbm4aGxseHhseHh4lJSM4NjRycnIqKioZGRgYGRcbHBodHRoeIB0bGxshIRohIh8iIiBQUE15eXlhYWGAgICkpKQuLi5iZG9RUlIyNjYuLi3Oz8v49vIVFhYvMCwjIyNTVU8nJSEnJycbGxsdHxgfHx0zMTMhISErLSY+PjkgIx0WGhpBQUEjIyM/Pz84ODg1NTUtHh61us/g4+z///zg4uu0udH+/f60uc///////f/7+/cbGxuxtckfHxvj4esdHBwbGxf+/vrg4uzf4ec5OTk2NjccHRj7+vr5+fUeHxkZGRX8/Pz9/fnh4+u1us5WVGEjIiHw7+61uM2xt8qsrK1SUVsuLS4pKCckJCP39/f19fPy8vDt7e3h4und3+bh4eC1udLLy82tsMWenpqHh4V6fYRzcnRjZ3JqamdVU11UU09MTElJSUc/QEE9PD48Ozg6PDcnJycZGhj9+/z49/fv8Orn5ObV193g4dzOztbY2dTNzdTEx9HDxcyvtMiutcfIycTEw7+8vLqoqLqRkri4uLWzsLKdoq6UmqyrrKagoKWpqKSMjZ51doN0dndra25oaGtraGlSVGdaWlVQTlNKSVJJS1A9PUgwMDAtLSodGyB6fqhPAAAANHRSTlMAhR76+eWMJRkI/u7oyruzeHI0KxQRDQcF/v7+/vXv7+nFwbGoqJ6WiHtrY1hQSzo5KRgRdW3s3gAAAdFJREFUOMvN0OdX2lAYx/HbAqXuVUf33rsluSSSEBMSyQIsIMu9R93aPd177/G/GvHADRr1pX5ff87vPOcBF7ziLDbrdFHyiJmXWtn7aSeKglds51eHwyG1s8+KDIXVwjENBKEZ4st31mRErtBNgZ1oIG5WlXUx8/1R8cHSKxGlVZP+ECFNsd3VMtXQl2lNIc/FMaJUy1MbiYg9Pykcx13UyEB2ASIvlZAnbiiqU1XEriqvhijqzj2uCN3iZvqrPYRU280MeL2ucqYnQMm/VS4WK0QmXNFBt9T0mx/ILm3BM77GDHJDSlud+1rSXArbyMqtXb/5tkYOTvk70UevCAJ0X0bms62CJKdFjhmNI++3iP8X5H2wPMXYNNXYoXCzMo7XtMbm6ngMw1J2PtkOG97guuQWtR1i8dCOzjSSM3tq9B+PGZpE9uZ0AcMMTK7OVKpQZ64mTV5YZ4bKkHEj82ITmf+0sXkz2GxPGGfS+OCfKPozeH13Mag9SG94KCxZ3gJdaU9uOkm9gULTraclCByqjOtBO6kZtgzz+fj6GxnF4Hi55oXEjhAy5QHDPuZsB0knDfkfvdmF4KTyTW3O9PplUz44rRy/yDwGZ/TuoRWcY/tiNY5pRnKXsAAAAABJRU5ErkJggg==">
+        <span id="tit">Mgek <small>&</small><i> Landers</i></span>
+        <button id="page" onclick="window.location.href='/landers'">探索</button>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="/js/jquery.mousewheel.min.js"></script>
+    <script src="/js/pictureViewer.js"></script>
+    <script>
+        $(function () {
+            $('.image-list').on('click', '.cover', function () {
+                var this_ = $(this);
+                var images = this_.parents('.image-list').find('.cover');
+                var imagesArr = new Array();
+                $.each(images, function (i, image) {
+                    imagesArr.push($(image).children('img').attr('src'));
+                });
+                $.pictureViewer({
+                    images: imagesArr, //需要查看的图片，数据类型为数组
+                    initImageIndex: this_.index() + 1, //初始查看第几张图片，默认1
+                    scrollSwitch: false //是否使用鼠标滚轮切换图片，默认false
+                });
+            });
+        });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+    $(window).scroll(function() {
+
+        if ($(document).scrollTop()<=0){
+            $(".bar").hide();
+        }else {
+            $(".bar").show();
+        }
+    });
+});
+    </script>
+{% endblock %}

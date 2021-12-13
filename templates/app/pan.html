@@ -1,0 +1,40 @@
+{% extends "base_app.html" %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Pan</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">Mgek个人网盘项目</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+        <br>
+        <p>Pan是一个个人云端存储服务</p>
+        <h3>简介</h3>
+        <p>本个人网盘实现了基本的网盘功能需求，包括<br>
+            1.文件上传和下载<br>
+            2.上传的文件格式限制和文件大小限制，部署时需要在服务器上额外设置body大小<br>
+            3.文件名称安全性检查，使用uuid算法重命名方式去重<br>
+            4.sqlite支持，方便数据保存迁移工作<br>
+            5.JWT支持，使用token验证的方式允许用户访问接口<br>
+            6.接口有效期认证，支持token失效时间<br>
+            7.JWT认证方式切换，支持Header，query等方式包含token信息<br>
+            8.文件智能分类，根据文件扩展名自动分类<br>
+            9.支持多用户模式，开启后支持用户的注册和注销功能<br>
+            10.支持邮件找回密码和注销功能，需要提供额外的SMTP服务<br>
+            11.域名自定义，支持在服务器上添加域名用于测试和部署服务<br>
+            12.保存路径自定义，默认在<code>path/file</code>下，支持自定义路径<br>
+            13.文件下载校验服务，默认为Nginx，开启后没有通过token验证不开放下载服务<br>
+        </p>
+        <h3>客户端预览</h3>
+        <img src="/store/pan/1.jpg">
+        <img src="/store/pan/2.jpg">
+        <img src="/store/pan/3.jpg">
+        <img src="/store/pan/4.jpg">
+        <h3>项目地址</h3>
+        <a href="https://github.com/Landers1037/pan">Github</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

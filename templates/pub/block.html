@@ -1,0 +1,25 @@
+{% extends "base_pub.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Block-ad</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+    <p class="text-center">项目来自ACL4SSR</p>
+        <br>
+        <li class="list-group-item">白名单 国内直连<a href="/public/block-ad/banAD.acl">banAD</a></li>
+        <li class="list-group-item">黑名单 代理gfwlist<a href="/public/block-ad/gfwlist-banAD.acl">gfwlist-banAD</a></li>
+        <li class="list-group-item">全局 代理国外常用域名<a href="/public/block-ad/onlybanAD.acl">onlybanAD</a></li>
+        <li class="list-group-item">国内域名代理<a href="/public/block-ad/backcn-banAD.acl">backcn-banAD</a></li>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

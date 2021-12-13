@@ -1,0 +1,37 @@
+{% extends "base_app.html" %}
+
+{% block body %}
+<div class="container-wrap">
+	<div class="text-center animated fadeInUp" style="padding-top: 10px">
+		<p class="toptitle">Blog</p>
+	</div>
+	<div style="margin-top: 30px;padding: 2rem">
+		<img src="/store/blog/index.png" style="max-width: 100%">
+	</div>
+		<div id="fh5co-work">
+			<h3>简介</h3>
+			<p>Blog是一个基于markdown文本的动态博客，你可以方便的使用它部署自己的博客。通过命令行工具你可以实现博客模板的创建，图片迁移，自动配置等功能<br>
+				blog提供了<code>go module</code>以供直接通过go下载使用
+			</p>
+			<h3>下载</h3>
+			<div class="code">
+					<pre class="bash"><code>
+						go get github.com/landers1037/blogo
+				</code>
+					</pre>
+			</div>
+			<h3>阅读文档</h3>
+			<a href="https://github.com/Landers1037/blog">Github Blog</a>
+			<h3>界面</h3>
+			<div class="col-md-12">
+				<img src="/store/blog/running.png" class="img-responsive">
+			</div>
+			<div class="col-md-12">
+				<img src="/store/blog/post.png" class="img-responsive">
+			</div>
+			<div class="col-md-12">
+				<img src="/store/blog/search.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+{% endblock %}>

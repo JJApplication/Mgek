@@ -1,0 +1,31 @@
+{% extends "base_app.html" %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Mgekserv</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">simple scheduling email&sms service</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="row text-center">
+        <img class="col-md-6" src="/store/mgekserv/1.jpg">
+        <img class="col-md-6" src="/store/mgekserv/2.jpg">
+    </div>
+        <br>
+        <p>mgekserv是一个自动定时邮件短信通知服务</p>
+        <h3>功能</h3>
+        <p>1.定时发送通知邮件(暂不支持html图文邮件，因为邮件服务器会拦截)</p>
+        <p>2.通过绑定twilio账户，自动发送短信</p>
+        <p>3.监控服务器状态，并定时通过邮件或短信通知</p>
+        <h3>使用</h3>
+        <p>1.通过<code>service.json</code>文件自定义配置</p>
+        <p>2.默认使用<strong>smtp.163.com</strong>作为邮件服务器，如需更换修改<code>service.json</code>文件</p>
+        <p>3.服务器监控默认关闭，开启后短信内容将自动变为监控日志，原有短信通知将关闭</p>
+        <h3>阅读文档</h3>
+        <a href="/simple-service.md">Mgekserv</a>
+            <h3>依赖</h3>
+            <p>email<br>twilio<br>scheduled<br></p>
+        </div>
+	</div><!-- END container-wrap -->
+{% endblock %}

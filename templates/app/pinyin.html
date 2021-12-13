@@ -1,0 +1,48 @@
+{% extends "base_app.html" %}
+
+
+{% block body %}
+	<div class="container-wrap">
+            <div class="text-center animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Pin Yin</p>
+			</div>
+			   	<div class="head" style="background: url(/store/pinyin/jiemian.png) center center no-repeat;background-size: contain;height: 240px;margin-top: 20px">
+                </div>
+		<div id="fh5co-work">
+			<div class="row">
+                <h3 style="padding-left: 15px;padding-right: 15px">主体界面</h3>
+				<div class="col-md-4">
+						<img src="/store/pinyin/input.png" class="img-responsive">
+				</div>
+                <div class="col-md-4">
+						<img src="/store/pinyin/pinyin.png" class="img-responsive">
+				</div>
+                <div class="col-md-4">
+						<img src="/store/pinyin/saved.png" class="img-responsive">
+				</div>
+				<div class="col-md-12 fh5co-project-detail">
+					<h3>功能介绍</h3>
+					<span class="fh5co-project-sub">拼音注音</span>
+					<p>本软件可以将输入的拼音字母标注音标并保存为图片，用于拼音教学<br>保存的图片格式可以选择jpg或者png格式</p>
+					<span class="fh5co-project-sub">使用优化</span>
+                    <p>1.对于输入法不易输入声韵母音标的问题，本软件提供一个自定义字母盘，选择需要输入的字母和声调即可快速添加拼音<br>
+                    2.针对由操作系统引起的部分字母字形变化问题，本软件提供了内置优化字体，同一跨平台间的字形<br>
+                    3.针对输入框的文字长度，自动切割文字长度生成多张图片，无需担心拼音过长超出图片长度<br>
+                    4.为主界面添加了状态显示框，可以查看图片的保存状态
+                    </p>
+					<span class="fh5co-project-sub">可选功能</span>
+                    <p>除了拼音注音功能，软件还提供了汉字注音功能(仍在测试中)</p>
+                    <h3>阅读文档</h3>
+                    <a href="/doc/pinyin.md">Pinyin</a>
+					<div class="fh5co-project-service">
+						<h3>依赖</h3>
+						<ul>
+							<li>PyQt5.1.2</li>
+							<li>Pillow</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

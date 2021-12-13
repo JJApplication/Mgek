@@ -1,0 +1,33 @@
+{% extends "base_app.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Marked-Flask</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">Flask app that renders md to html by marked.js </p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+    <pre class="python"><code>
+'''thanks for trying marked-flask😊, it's a simple way to read your .md online🍦'''
+    </code></pre>
+        <br>
+        <p>marked-flask是一个基于marked.js渲染md文件的flask应用</p>
+        <h3>简介</h3>
+        <p>该应用基于flask，利用ajax读取本地markdown文件，在前端使用<code>marked.js</code>直接渲染为html文本。配合<code>github-markdown-css</code>和<code>highlight.js</code>实现对文本内容和代码块的特殊渲染</p>
+        <p>本站点的在线文档即使用<code>marked-flask</code>框架</p>
+        <h3>下载</h3>
+        <p>使用git克隆源码仓库</p>
+        <pre class="bash"><code>$ git clone https://github.com/Landers1037/marked-flask.git</code></pre>
+        <h3>阅读文档</h3>
+        <a href="/marked-flask.md">Marked-Flask</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

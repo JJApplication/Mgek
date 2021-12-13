@@ -1,0 +1,131 @@
+{% extends "base_index.html" %}
+{% block title %}Mgek{% endblock %}
+{% block head %}
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:400" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bar.css">
+    <script src="https://cdn.bootcss.com/modernizr/2.6.2/modernizr.min.js"></script>
+{% endblock %}
+
+{% block style %}
+    <style>
+        #fh5co-hero,.slider-text,.slides li,.slider-text-inner{
+            height: 200px;
+            min-height: 200px!important;
+        }
+        .slider-text-inner h2{
+            color: white!important;
+            font-size: 15px!important;
+        }
+        .slider-text-inner h1{
+            color: white!important;
+            font-size: 20px!important;
+        }
+        .slider-text-inner p{
+            color: white!important;
+            font-size: 14px!important;
+        }
+        #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn{
+            width: 120px;
+            background-color: white;
+            border: 1.5px solid #222222;
+            border-radius: 5px;
+            padding: 5px 5px 5px 5px!important;
+        }
+        #fh5co-hero .flexslider .flex-control-nav{
+            bottom: 30px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+	<div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background:url('/images/bg1.jpg');background-size: cover">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-12 slider-text">
+				   				<div class="slider-text-inner">
+				   					<h1>ImgHost, a light image hosting service</h1>
+										<h2>轻量级本地化图床</h2>
+										<p><a class="btn btn-primary btn-demo" href="/app/mgek-imghost"> View </a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background:url('/images/bg2.jpg');background-size: cover">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-12 slider-text">
+				   				<div class="slider-text-inner">
+				   					<h1>Pan, Solution of Personal Web-Storage</h1>
+										<h2>个人云端存储解决方案</h2>
+										<p><a class="btn btn-primary btn-demo" href="/app/pan"> View </a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background:url('/images/bg3.jpg');background-size: cover">
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container-fluids">
+			   			<div class="row">
+				   			<div class="col-md-12 slider-text" style="width: 100%">
+				   				<div class="slider-text-inner">
+				   					<h1>Online Documents</h1>
+										<h2>Mgek在线文档</h2>
+										<p><a class="btn btn-demo" href="/doc/"> View </a></p>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+
+			  	</ul>
+		  	</div>
+		</aside>
+
+		<div id="fh5co-work" class="fh5co-light-grey">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Apps</h2>
+					<p>Here are all my apps.</p>
+				</div>
+			</div>
+			<div class="row">
+                {% for app in apps|list %}
+				<div class="col-md-4 text-center animate-box">
+                    {% if app.href == "#" %}
+                        <a href="#" class="work"  style="background-image: url('{{ app.img }}');">
+						<div class="desc">
+							<h2>{{ app.name }}</h2>
+							<span>{{ app.span }}</span>
+						</div>
+					    </a>
+                    {% else %}
+					<a href="/{{ app.href }}" class="work"  style="background-image: url('{{ app.img }}');">
+						<div class="desc">
+							<h2>{{ app.name }}</h2>
+							<span>{{ app.span }}</span>
+						</div>
+					</a>
+                    {% endif %}
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+
+	</div><!-- END container-wrap -->
+{% endblock %}
+
+{% block bar %}
+    <div class="bar">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAB2lBMVEUAAAAnKCRsbm4aGxseHhseHh4lJSM4NjRycnIqKioZGRgYGRcbHBodHRoeIB0bGxshIRohIh8iIiBQUE15eXlhYWGAgICkpKQuLi5iZG9RUlIyNjYuLi3Oz8v49vIVFhYvMCwjIyNTVU8nJSEnJycbGxsdHxgfHx0zMTMhISErLSY+PjkgIx0WGhpBQUEjIyM/Pz84ODg1NTUtHh61us/g4+z///zg4uu0udH+/f60uc///////f/7+/cbGxuxtckfHxvj4esdHBwbGxf+/vrg4uzf4ec5OTk2NjccHRj7+vr5+fUeHxkZGRX8/Pz9/fnh4+u1us5WVGEjIiHw7+61uM2xt8qsrK1SUVsuLS4pKCckJCP39/f19fPy8vDt7e3h4und3+bh4eC1udLLy82tsMWenpqHh4V6fYRzcnRjZ3JqamdVU11UU09MTElJSUc/QEE9PD48Ozg6PDcnJycZGhj9+/z49/fv8Orn5ObV193g4dzOztbY2dTNzdTEx9HDxcyvtMiutcfIycTEw7+8vLqoqLqRkri4uLWzsLKdoq6UmqyrrKagoKWpqKSMjZ51doN0dndra25oaGtraGlSVGdaWlVQTlNKSVJJS1A9PUgwMDAtLSodGyB6fqhPAAAANHRSTlMAhR76+eWMJRkI/u7oyruzeHI0KxQRDQcF/v7+/vXv7+nFwbGoqJ6WiHtrY1hQSzo5KRgRdW3s3gAAAdFJREFUOMvN0OdX2lAYx/HbAqXuVUf33rsluSSSEBMSyQIsIMu9R93aPd177/G/GvHADRr1pX5ff87vPOcBF7ziLDbrdFHyiJmXWtn7aSeKglds51eHwyG1s8+KDIXVwjENBKEZ4st31mRErtBNgZ1oIG5WlXUx8/1R8cHSKxGlVZP+ECFNsd3VMtXQl2lNIc/FMaJUy1MbiYg9Pykcx13UyEB2ASIvlZAnbiiqU1XEriqvhijqzj2uCN3iZvqrPYRU280MeL2ucqYnQMm/VS4WK0QmXNFBt9T0mx/ILm3BM77GDHJDSlud+1rSXArbyMqtXb/5tkYOTvk70UevCAJ0X0bms62CJKdFjhmNI++3iP8X5H2wPMXYNNXYoXCzMo7XtMbm6ngMw1J2PtkOG97guuQWtR1i8dCOzjSSM3tq9B+PGZpE9uZ0AcMMTK7OVKpQZ64mTV5YZ4bKkHEj82ITmf+0sXkz2GxPGGfS+OCfKPozeH13Mag9SG94KCxZ3gJdaU9uOkm9gULTraclCByqjOtBO6kZtgzz+fj6GxnF4Hi55oXEjhAy5QHDPuZsB0knDfkfvdmF4KTyTW3O9PplUz44rRy/yDwGZ/TuoRWcY/tiNY5pRnKXsAAAAABJRU5ErkJggg==">
+        <span id="tit">Mgek <small>&</small><i> Landers</i></span>
+        <button id="page" onclick="window.location.href='/landers'">探索</button>
+    </div>
+{% endblock %}

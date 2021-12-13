@@ -1,0 +1,30 @@
+{% extends "base_app.html" %}
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Mgek ImgBed</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">Mgek下的图床项目</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+        <br>
+        <p>Mgek ImgBed是一个功能型图床项目</p>
+        <h3>简介</h3>
+        <p>本图床实现了基本的图床功能需求，包括<br>
+            1.图片上传和下载<br>
+            2.上传的文件格式限制和文件大小限制<br>
+            3.文件名称安全性检查，使用md5和base64重命名方式去重<br>
+            4.多数据库支持，支持sqlite和MongoDB数据库保存索引<br>
+            5.JWT支持，使用token验证的方式允许用户访问接口<br>
+            6.接口有效期认证，支持token失效时间<br>
+            7.图片数据库分类，支持按照用户信息分类上传的图片<br>
+            8.IP filter支持频繁访问的IP禁止，自定义访问频率和黑名单机制<br>
+        </p>
+
+        <h3>项目地址</h3>
+        <a href="https://github.com/Landers1037/mgek_imgbed">Github</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

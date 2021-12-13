@@ -1,0 +1,30 @@
+{% extends "base_app.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">ImgHost</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">An Electron app of imghost</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+        <br>
+        <p>imghost是一个使用electron开发的跨平台图床应用</p>
+        <h3>简介</h3>
+        <p>该应用基于<code>electron</code>，你可以使用它自由上传图片到定义的图床api或者批量下载图片。使用<code>json</code>文件保存配置</p>
+        <h3>下载</h3>
+        <p>使用git克隆源码仓库</p>
+        <pre class="bash"><code>$ git clone https://github.com/Landers1037/imghost.git</code></pre>
+        <p>编译安装文件</p>
+        <pre class="bash"><code>$ cd imghost && npm install<br>$ npm run build</code></pre>
+        <h3>源码地址</h3>
+        <a href="https://github.com/Landers1037/imghost">ImgHost</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}>

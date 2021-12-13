@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://mgek.cc/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/usage/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/copyright/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/gallery/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/api/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/about/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgek-imghost/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/pan/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/pinyin/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgekdown/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgekserv/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/marked-flask/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/font-cutter/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/pinyin-e/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgsearch/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/crawler/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/color-picker/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/djcd/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/kiyo/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/imghost/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgekx/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/steam_status/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/nms/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/pigform/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/app/mgek_imgbed/</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/subscribe</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/changelog.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/pinyin.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgekpi.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/simple-service.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgekapp.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgektone.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/simple-site.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/flask-demo.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgekssr.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgekdown.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/marked-flask.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgekimghost.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/kiyo.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/steam_status.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/nms.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/pigform.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/mgek-imgbed.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/doc/pan.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/ssr</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/brook</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/aria2</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/bbr</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/goflyway</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/user-agents</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/user-agents-json</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/ip-trackers</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/block-ad</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/color</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/linux-cmd</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/api_v2/2020-08-14</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/mgekimghost.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/mgekdown.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/simple-service.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/marked-flask.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/font-cutter.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/kiyo.md</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/block-ad/banAD.acl</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/block-ad/gfwlist-banAD.acl</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/block-ad/onlybanAD.acl</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://mgek.cc/public/block-ad/backcn-banAD.acl</loc>
+  <lastmod>2020-08-14T12:09:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

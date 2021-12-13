@@ -1,0 +1,50 @@
+{% extends "base_app.html" %}
+
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Steam Status</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">Steam friends status watchdog</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+        <br>
+        <p>Steam status是一个steam好友在线状态监控爬虫工具，同时是一款CLI工具</p>
+        <h3>简介</h3>
+        <p>你可以使用CLI工具在本地测试抓取好友的在线状态，或者使用服务端工具部署于服务器。该工具会默认以5分钟/次的频率爬取在线状态。<br>
+        注意，steamcommunity的ip不稳定，在你使用普通网络环境时可能会爬取失败。<br>
+        该工具服务端使用redis保存你爬取的数据，你可以在<code>main.py</code>文件中关闭该选项
+        </p>
+        <h3>使用示例</h3>
+        <pre class="python"><code>
+                git clone https://github.com/Landers1037/steam_status.git
+
+                #按照用户名模糊匹配
+                steam_status.py run --name=用户名
+                #精准抓取 返回状态信息
+                steam_status.py run --url=用户主页地址
+
+                #使用帮助
+            Usage: steam_cli.py [OPTIONS] COMMAND [ARGS]...
+
+            Options:
+              --help  Show this message and exit.
+
+            Commands:
+              run      指定用户名称或准确的用户主页地址
+              version  版本信息
+            </code></pre>
+
+        <h3>项目地址</h3>
+        <a href="https://github.com/Landers1037/steam_status">Github</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

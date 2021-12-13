@@ -1,0 +1,26 @@
+{% extends "base_pub.html" %}
+{% block head %}
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">best ip-trackers</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+    <pre class="bash"><code>
+'''updated: {{ time }}'''
+{{ data1 }}
+####best ips
+{{ data2 }}
+    </code></pre>
+        <br>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

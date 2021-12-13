@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1a1a1a">
+	<title>Mgek.app</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.png" rel="icon">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:500,600&display=swap" rel="stylesheet">
+	
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.0/flexslider.min.css" rel="stylesheet">
+        <!-- Theme style  -->
+	<link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/atom-one-light.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://cdn.bootcss.com/modernizr/2.6.2/modernizr.min.js"></script>
+
+	</head>
+    <style>
+        h3{
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #d9d6cf;
+        }
+        .toptitle{
+            font-size: 18px;
+            color: #fff;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: fit-content;
+            height: fit-content;
+            padding: 0 5px 0 5px;
+            border: 2px solid #dddddd;
+        }
+        #fh5co-work{
+            padding-top: 2em;
+        }
+        .code pre{
+            border: none;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+        }
+        #fh5co-work .col-md-6{
+            padding: 0;
+        }
+    </style>
+	<body>
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container-wrap">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="/">Mgek</a><i>APP</i></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="/doc/">Doc</a></li>
+							<li class="has-dropdown">
+								<a href="http://renj.io">Site</a>
+								<ul class="dropdown">
+									<li><a href="http://renj.io/blog/">Blog</a></li>
+									<li><a href="/usage/">Usage</a></li>
+									<li><a href="http://renj.io/copyright/">Copyright</a></li>
+									<li><a href="https://github.com/landers1037/">Github</a></li>
+								</ul>
+							</li>
+                            <li><a href="/public/">PUB</a></li>
+                            <li><a href="/api/">API</a></li>
+							<li><a href="/about/">About</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Pan</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">Mgek下个人网盘项目</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="code">
+        <br>
+        <p>Pan是一个个人云端存储服务</p>
+        <h3>简介</h3>
+        <p>本个人网盘实现了基本的网盘功能需求，包括<br>
+            1.文件上传和下载<br>
+            2.上传的文件格式限制和文件大小限制，部署时需要在服务器上额外设置body大小<br>
+            3.文件名称安全性检查，使用uuid算法重命名方式去重<br>
+            4.sqlite支持，方便数据保存迁移工作<br>
+            5.JWT支持，使用token验证的方式允许用户访问接口<br>
+            6.接口有效期认证，支持token失效时间<br>
+            7.JWT认证方式切换，支持Header，query等方式包含token信息<br>
+            8.文件智能分类，根据文件扩展名自动分类<br>
+            9.支持多用户模式，开启后支持用户的注册和注销功能<br>
+            10.支持邮件找回密码和注销功能，需要提供额外的SMTP服务<br>
+            11.域名自定义，支持在服务器上添加域名用于测试和部署服务<br>
+            12.保存路径自定义，默认在<code>path/file</code>下，支持自定义路径<br>
+            13.文件下载校验服务，默认为Nginx，开启后没有通过token验证不开放下载服务<br>
+        </p>
+
+        <h3>项目地址</h3>
+        <a href="https://github.com/Landers1037/pan">Github</a>
+    </div>
+		</div>
+	</div><!-- END container-wrap -->
+
+	<div class="container-wrap">
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="row">
+				<div class="col-md-4 fh5co-widget">
+					<h4>About Mgek</h4>
+					<p>A website that I build to show my code work.<br>Here you can see the introduction of my apps and read documents online.My gitbook is also published here, you can read it if you like.</p>
+				</div>
+
+				<div class="col-md-4 col-md-push-1">
+					<h4>Links</h4>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Home</a></li>
+						<li><a href="http://renj.io">My site</a></li>
+						<li><a href="http://renj.io/blog/">Blog</a></li>
+						<li><a href="/about/">About</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<h4>Contact Information</h4>
+					<ul class="fh5co-footer-links">
+                        <li><a>HUST 1037</a></li>
+						<li><a href="mailto:liaorenj@gmail.com">liaorenj@gmail.com</a></li>
+						<li><a href="https://t.me/Greatpipi/">Telegram</a></li>
+                        <li><a href="/mailtome">Subscribe</a></li>
+						<li><button onclick="window.location.href='https://github.com/landers1037'" style="background-color: #da2657;border: none;font-size: 12px;color: #fff;vertical-align: middle">Follow</button><span style="background-color: #e1e1e1;font-size:14px;padding: 2px 3px;vertical-align: middle">🍭</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<span class="block">&copy; 2019 <a href="http://renj.io/" target="_blank">Landers1037</a></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div><!-- END container-wrap -->
+	</div>
+	<!-- jQuery -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.0/jquery.flexslider.min.js"></script>
+	<script src="/js/main.js"></script>
+	</body>
+</html>
+

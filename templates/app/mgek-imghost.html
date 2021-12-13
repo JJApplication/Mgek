@@ -1,0 +1,38 @@
+{% extends "base_app.html" %}
+
+
+{% block body %}
+	<div class="container-wrap">
+			<div class="animated fadeInUp" style="padding-top: 10px">
+                <p class="toptitle">Mgek Img-Host</p>
+                <p style="padding-top: 10px" class="text-center animated fadeInUp">flask image hosting app</p>
+		  	</div>
+		<div id="fh5co-work">
+    <div class="row text-center">
+        <img class="col-md-12" src="/store/imghost/demo1.jpg">
+    </div>
+        <br>
+        <p>mgek img-host是一个轻量web图床</p>
+        <h3>简介</h3>
+        <p>mgek图床提供简单的本地配置运行环境，一键搭建完成本地图床服务。使用sqlite和mongoDB数据库建立索引，支持登录，多文件上传，图片直链生成，图片外链生成，批量删除，批量下载，批量提取直链，查看上传历史</p>
+        <h3>使用</h3>
+        <p>克隆：你可以从git仓库直接克隆本代码，参照文档运行</p>
+        <p>Docker：本示例提供docker一键拉取本地运行</p>
+        <h3>阅读文档</h3>
+        <a href="/mgekimghost.md">MgekImg-Host</a>
+            <h3>界面</h3>
+            <div class="row">
+                <img class="col-md-12" src="/store/imghost/demo2.jpg">
+                <img class="col-md-12" src="/store/imghost/demo3.jpg">
+                <img class="col-md-12" src="/store/imghost/demo4.jpg">
+                <img class="col-md-12" src="/store/imghost/demo5.jpg">
+                <img class="col-md-12" src="/store/imghost/demo6.jpg">
+                <img class="col-md-12" src="/store/imghost/demo7.jpg">
+                <img class="col-md-12" src="/store/imghost/demo8.jpg">
+                <img class="col-md-12" src="/store/imghost/demo9.jpg">
+                <img class="col-md-12" src="/store/imghost/demo10.jpg">
+            </div>
+
+        </div>
+	</div><!-- END container-wrap -->
+{% endblock %}

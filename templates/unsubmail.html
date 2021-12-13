@@ -1,0 +1,149 @@
+{% extends "base_index.html" %}
+{% block title %}Subscribe{% endblock %}
+{% block head %}
+    <script src="https://cdn.staticfile.org/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.19.2/axios.min.js" async></script>
+{% endblock %}
+
+{% block style %}
+<style>
+    body{font-family: "Asap","Oxygen", "Source Han Sans SC","Helvetica Neue",sans-serif;}
+    .content{max-width: 1060px;margin: 0 auto;background-color: #202020;text-align: center;height: 400px;color: #f5f5f5;position: relative}
+    .content .main{padding: 30px 10px}
+    .content .main h1{color: #ff9900;font-size: 36px}
+    .form input{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        border-radius: 4px;
+        padding: 8px 4px;
+        border-style: none;
+        font-size: 18px;
+        color: #409eff;
+        font-weight: bold;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .form button{
+        position: absolute;
+        top: calc(50% + 30px);
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 4px;
+        border-style: none;
+        font-size: 26px;
+        color: #fff;
+        background-color: #409eff;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .form button:hover{
+        padding: 6px 0;
+        width: 140px;
+        transition: all 0.4s ease;
+    }
+    #copy{
+        position: absolute;
+        bottom: 5%;
+        display: block;
+        width: 100%;
+        font-family: "Asap","Oxygen", "Source Han Sans SC",sans-serif;
+    }
+    @media  (max-width: 720px){
+        .form input{
+            width: 80%;
+            font-size: 17px;
+            transition: all .3s ease;
+        }
+        .form button{
+            font-size: 22px;
+            width: 100px;
+            transition: all .3s ease;
+        }
+        .form button:hover{
+        width: 120px;
+        transition: all 0.4s ease;
+    }
+    }
+    @media  (max-width: 420px){
+        .form input{
+            width: 90%;
+            font-size: 16px;
+            transition: all .3s ease;
+        }
+        .form button{
+            font-size: 18px;
+            width: 80px;
+            transition: all .3s ease;
+        }
+        .form button:hover{
+        width: 100px;
+        transition: all 0.4s ease;
+    }
+    }
+</style>
+{% endblock %}
+{% block body %}
+    <div class="content">
+        <div class="main animated fadeInUp">
+            <h1>取消订阅</h1>
+            <p style="margin-top: 20px">取消订阅来自Mgek的通知消息</p>
+        </div>
+        <div class="form">
+            <label>
+                <input class="address" v-model="address" placeholder="输入你的邮箱">
+            </label>
+            <button @click="unsub">Unsub</button>
+        </div>
+        <p id="copy" style="text-align: center">Copyright <a href="http://mgek.cc" target="_blank" style="color:#ff9900;text-decoration: none;font-weight: bold">Mgek.APP</a></p>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script>
+    let vm = new Vue({
+        el: ".form",
+        data: {
+            address: '',
+            state: true
+        },
+        methods: {
+            unsub(){
+                alert("Mgek并不会保存你的邮箱地址");
+                /*if(this.address.length>0 && this.address.includes("@") &&
+                    this.state && !this.address.endsWith("@")
+                    && !this.address.startsWith("@")
+                    && !this.address.startsWith("#")
+                ){
+                    this.state = false;
+                    axios.get("http://api.renj.io/rest/jjmail/unsub_mgek?address=" + this.address).then(res =>{
+                        if(res.data.data === 'ok'){
+                            alert("你已经取消订阅");
+                            this.state = false;
+                        }else {
+                            this.state = true;
+                            alert("请检查邮箱后重试");
+                        }
+                    }).catch(err =>{
+                        this.state = true;
+                        alert("邮件服务出错请稍后再试")
+                    })
+
+                }else if(!this.state){
+                    alert("请勿重复操作")
+                }else{
+                    alert("检查你的邮箱格式")
+                }*/
+
+            }
+        }
+    })
+</script>
+{% endblock %}
